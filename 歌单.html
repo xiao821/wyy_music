@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/歌单.css">
+    <link rel="stylesheet" type="text/css" href="css/播放器.css">
+</head>
+<body>
+    <div id="all">
+
+        <!-- 导航栏头部 -->
+        <div id="head">
+            <div class="head-top">
+                <ul>
+                    <img src="img/wyy.png" class="img1">
+                    <li class="selected"><a href="主页.html">发现音乐</a></li>
+                    <li><a href="我的音乐.html">我的音乐</a></li>
+                    <li><a href="关注.html">关注</a></li>
+                    <li><a href="商城.html">商城</a></li>
+                    <li><a href="javascript:;">音乐人</a></li>
+                    <li><a href="下载客户端.html">下载客户端</a></li>
+                    <input type="text" placeholder="音乐/视频/电台/用户">
+                    <button><a href="创作者中心.html">创作者中心</a></button>
+                    <img src="img/tx.png" class="img2">
+                </ul>
+            </div>
+            <div class="head-top1">
+                <ul>
+                    <li><a href="主页.html">推荐</a></li>
+                    <li><a href="排行榜.html">排行榜</a></li>
+                    <li class="selected"><a href="歌单.html">歌单</a></li>
+                    <li><a href="主播电台.html">主播电台</a></li>
+                    <li><a href="歌手.html">歌手</a></li>
+                    <li><a href="新碟上架.html">新碟上架</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <script src="js/vue.js"></script> -->
+    
+        <div id="example">
+            <!-- 主页 -->
+            <div class="main">
+                <div class="main-head">
+
+                    <!-- 选择分类按钮 -->
+                    <div class="title" id="a">选择分类⬇</div>
+                        <transition name="fade">
+                            <div class="content" v-if="show"  id="fade">
+                                <dl>
+                                    <dt>语种&nbsp;|</dt>
+                                    <dd class="current name">全部</dd>
+                                    &nbsp;<dd class="name">华语</dd>
+                                    &nbsp;<dd class="name">日语</dd>
+                                    &nbsp;<dd>韩语</dd>
+                                    &nbsp;<dd>粤语</dd>
+                                    &nbsp;<dd>欧美</dd>
+                                </dl>
+                                <dl>
+                                    <dt>风格&nbsp;|</dt>
+                                    <dd>流行</dd>
+                                    &nbsp;<dd>摇滚</dd>
+                                    &nbsp;<dd>民谣</dd>
+                                    &nbsp;<dd>电子</dd>
+                                    &nbsp;<dd>舞曲</dd>
+                                </dl>
+                                <dl>
+                                    <dt>场景&nbsp;|</dt>
+                                    <dd>清晨</dd>
+                                    &nbsp;<dd>夜晚</dd>
+                                    &nbsp;<dd>学习</dd>
+                                    &nbsp;<dd>工作</dd>
+                                    &nbsp;<dd>地铁</dd>
+                                    &nbsp;<dd>驾车</dd>
+                                    &nbsp;<dd>运动</dd>
+                                </dl>
+                                <dl>
+                                    <dt>情感&nbsp;|</dt>
+                                    <dd>怀旧</dd>
+                                    &nbsp;<dd>清新</dd>
+                                    &nbsp;<dd>浪漫</dd>
+                                    &nbsp;<dd>伤感</dd>
+                                    &nbsp;<dd>放松</dd>
+                                </dl>
+                                <dl>
+                                    <dt>主题&nbsp;|</dt>
+                                    <dd>综艺</dd>
+                                    &nbsp;<dd>儿童</dd>
+                                    &nbsp;<dd>校园</dd>
+                                    &nbsp;<dd>游戏</dd>
+                                    &nbsp;<dd>70后</dd>
+                                    &nbsp;<dd>80后</dd>
+                                    &nbsp;<dd>90后</dd>
+                                </dl>
+                            </div>
+                        </transition>
+                        
+                    <div>
+
+                        <!-- 全部 -->
+                        <div class="rmtj item"  style="display: block;">
+                            <h3>全部</h3>
+                            <div class="rm">
+                                <span><a href="歌单.html">热门</a></span>
+                            </div>
+
+                            <div class="hr"></div>
+
+                            <table>
+                            <tr>
+                                <td>
+                                    <img src="img/歌单1.jpg" title="[一起Chill] 耳机里的温柔秋天">
+                                    <div class="ej">
+                                        <p>2032万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[一起Chill] 耳机里的温柔秋天</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单2.jpg" title="[卧室漫游] 盖上被子 独享你心里的宇宙">
+                                    <div class="ej">
+                                        <p>1090万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[卧室漫游] 盖上被子 独享你心里的宇宙</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单3.jpg" title="[还是会想你] 一个人听的华语慢情歌">
+                                    <div class="ej">
+                                        <p>567万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[还是会想你] 一个人听的华语慢情歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单4.jpg" title="[下午茶时间] 午后限定音乐饮品欢迎品尝">
+                                    <div class="ej">
+                                        <p>2367万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[下午茶时间] 午后限定音乐饮品欢迎品尝</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单5.jpg" title="[宇宙级浪漫] rapper唱情歌 坠入爱的银河">
+                                    <div class="ej">
+                                        <p>235万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[宇宙级浪漫] rapper唱情歌 坠入爱的银河</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单6.jpg" title="[春日漫步] 春光无限好 出门踏青吧">
+                                    <div class="ej">
+                                        <p>986万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[春日漫步] 春光无限好 出门踏青吧</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单7.jpg" title="[放松，就现在] 来音乐里神游">
+                                    <div class="ej">
+                                        <p>3748万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[放松，就现在] 来音乐里神游</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单8.jpg" title="[还是会想你] 一个人听的华语慢情歌">
+                                    <div class="ej">
+                                        <p>879万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[还是会想你] 一个人听的华语慢情歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单9.jpg" title="[节奏控]超好听的小众英文歌">
+                                    <div class="ej">
+                                        <p>376万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[节奏控]超好听的小众英文歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单10.jpg" title="[微醺小酒馆] 有酒有音乐 不打烊酒馆">
+                                    <div class="ej">
+                                        <p>1067万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[微醺小酒馆] 有酒有音乐 不打烊酒馆</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单11.jpg" title="[出门大作战] 合着音乐不紧不慢">
+                                    <div class="ej">
+                                        <p>1654万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[出门大作战] 合着音乐不紧不慢</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单12.jpg" title="[爱恋银河] 跨越星河来见你">
+                                    <div class="ej">
+                                        <p>1345万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[爱恋银河] 跨越星河来见你</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单13.jpg" title="[宝贝的八音盒] 10万宝贝选择的哄睡音乐">
+                                    <div class="ej">
+                                        <p>2896万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[宝贝的八音盒] 10万宝贝选择的哄睡音乐</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单14.jpg" title="[下班快乐] 下班路上 随轻快节拍放空大脑">
+                                    <div class="ej">
+                                        <p>2673万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[下班快乐] 下班路上 随轻快节拍放空大脑</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单15.jpg" title="[都市夜行] 复古迷情与都市夜晚的邂逅">
+                                    <div class="ej">
+                                        <p>1083万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[都市夜行] 复古迷情与都市夜晚的邂逅</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单16.jpg" title="[轻音乐] 耳机里藏着生活的解药">
+                                    <div class="ej">
+                                        <p>356万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[轻音乐] 耳机里藏着生活的解药</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单17.jpg" title="[双倍快乐] 听了心情会变好">
+                                    <div class="ej">
+                                        <p>2032万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[双倍快乐] 听了心情会变好</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单18.jpg" title="[回忆时刻] 那些触动心灵的熟悉旋律">
+                                    <div class="ej">
+                                        <p>764万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[回忆时刻] 那些触动心灵的熟悉旋律</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单19.jpg" title="[逃离城市计划] 别赶路 去感受路">
+                                    <div class="ej">
+                                        <p>1078万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[逃离城市计划] 别赶路 去感受路</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单20.jpg" title="[正宗好货] 请打开随机播放收听">
+                                    <div class="ej">
+                                        <p>2789万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <audio><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[正宗好货] 请打开随机播放收听</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                            </tr>
+                            </table>
+                            
+                        </div>
+
+                        <!-- 华语 -->
+                        <div class="rmtj item">
+                            <h3>华语</h3>
+                            <div class="rm">
+                                <span><a href="歌单.html">热门</a></span>
+                            </div>
+
+                            <div class="hr"></div>
+
+                            <table>
+                            <tr>
+                                <td>
+                                    <img src="img/歌单20.jpg" title="[一起Chill] 耳机里的温柔秋天">
+                                    <div class="ej">
+                                        <p>2032万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[一起Chill] 耳机里的温柔秋天</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单19.jpg" title="[卧室漫游] 盖上被子 独享你心里的宇宙">
+                                    <div class="ej">
+                                        <p>1090万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[卧室漫游] 盖上被子 独享你心里的宇宙</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单18.jpg" title="[还是会想你] 一个人听的华语慢情歌">
+                                    <div class="ej">
+                                        <p>567万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[还是会想你] 一个人听的华语慢情歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单17.jpg" title="[下午茶时间] 午后限定音乐饮品欢迎品尝">
+                                    <div class="ej">
+                                        <p>2367万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[下午茶时间] 午后限定音乐饮品欢迎品尝</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单16.jpg" title="[宇宙级浪漫] rapper唱情歌 坠入爱的银河">
+                                    <div class="ej">
+                                        <p>235万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[宇宙级浪漫] rapper唱情歌 坠入爱的银河</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单15.jpg" title="[春日漫步] 春光无限好 出门踏青吧">
+                                    <div class="ej">
+                                        <p>986万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[春日漫步] 春光无限好 出门踏青吧</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单14.jpg" title="[放松，就现在] 来音乐里神游">
+                                    <div class="ej">
+                                        <p>3748万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[放松，就现在] 来音乐里神游</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单13.jpg" title="[还是会想你] 一个人听的华语慢情歌">
+                                    <div class="ej">
+                                        <p>879万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[还是会想你] 一个人听的华语慢情歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单12.jpg" title="[节奏控]超好听的小众英文歌">
+                                    <div class="ej">
+                                        <p>376万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[节奏控]超好听的小众英文歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单11.jpg" title="[微醺小酒馆] 有酒有音乐 不打烊酒馆">
+                                    <div class="ej">
+                                        <p>1067万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[微醺小酒馆] 有酒有音乐 不打烊酒馆</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单10.jpg" title="[出门大作战] 合着音乐不紧不慢">
+                                    <div class="ej">
+                                        <p>1654万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[出门大作战] 合着音乐不紧不慢</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单9.jpg" title="[爱恋银河] 跨越星河来见你">
+                                    <div class="ej">
+                                        <p>1345万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[爱恋银河] 跨越星河来见你</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单8.jpg" title="[宝贝的八音盒] 10万宝贝选择的哄睡音乐">
+                                    <div class="ej">
+                                        <p>2896万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[宝贝的八音盒] 10万宝贝选择的哄睡音乐</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单7.jpg" title="[下班快乐] 下班路上 随轻快节拍放空大脑">
+                                    <div class="ej">
+                                        <p>2673万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[下班快乐] 下班路上 随轻快节拍放空大脑</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单6.jpg" title="[都市夜行] 复古迷情与都市夜晚的邂逅">
+                                    <div class="ej">
+                                        <p>1083万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[都市夜行] 复古迷情与都市夜晚的邂逅</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单5.jpg" title="[轻音乐] 耳机里藏着生活的解药">
+                                    <div class="ej">
+                                        <p>356万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[轻音乐] 耳机里藏着生活的解药</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单4.jpg" title="[双倍快乐] 听了心情会变好">
+                                    <div class="ej">
+                                        <p>2032万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[双倍快乐] 听了心情会变好</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单3.jpg" title="[回忆时刻] 那些触动心灵的熟悉旋律">
+                                    <div class="ej">
+                                        <p>764万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[回忆时刻] 那些触动心灵的熟悉旋律</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单2.jpg" title="[逃离城市计划] 别赶路 去感受路">
+                                    <div class="ej">
+                                        <p>1078万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[逃离城市计划] 别赶路 去感受路</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单1.jpg" title="[正宗好货] 请打开随机播放收听">
+                                    <div class="ej">
+                                        <p>2789万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <audio><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[正宗好货] 请打开随机播放收听</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                            </tr>
+                            </table>
+                            
+                        </div>
+
+                         <!-- 日语 -->
+                         <div class="rmtj item">
+                            <h3>日语</h3>
+                            <div class="rm">
+                                <span><a href="歌单.html">热门</a></span>
+                            </div>
+
+                            <div class="hr"></div>
+
+                            <table>
+                            <tr>
+                                <td>
+                                    <img src="img/歌单10.jpg" title="[一起Chill] 耳机里的温柔秋天">
+                                    <div class="ej">
+                                        <p>2032万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[一起Chill] 耳机里的温柔秋天</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单9.jpg" title="[卧室漫游] 盖上被子 独享你心里的宇宙">
+                                    <div class="ej">
+                                        <p>1090万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[卧室漫游] 盖上被子 独享你心里的宇宙</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单8.jpg" title="[还是会想你] 一个人听的华语慢情歌">
+                                    <div class="ej">
+                                        <p>567万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[还是会想你] 一个人听的华语慢情歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单7.jpg" title="[下午茶时间] 午后限定音乐饮品欢迎品尝">
+                                    <div class="ej">
+                                        <p>2367万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[下午茶时间] 午后限定音乐饮品欢迎品尝</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单6.jpg" title="[宇宙级浪漫] rapper唱情歌 坠入爱的银河">
+                                    <div class="ej">
+                                        <p>235万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[宇宙级浪漫] rapper唱情歌 坠入爱的银河</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单5.jpg" title="[春日漫步] 春光无限好 出门踏青吧">
+                                    <div class="ej">
+                                        <p>986万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[春日漫步] 春光无限好 出门踏青吧</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单4.jpg" title="[放松，就现在] 来音乐里神游">
+                                    <div class="ej">
+                                        <p>3748万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[放松，就现在] 来音乐里神游</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单3.jpg" title="[还是会想你] 一个人听的华语慢情歌">
+                                    <div class="ej">
+                                        <p>879万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[还是会想你] 一个人听的华语慢情歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单2.jpg" title="[节奏控]超好听的小众英文歌">
+                                    <div class="ej">
+                                        <p>376万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[节奏控]超好听的小众英文歌</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单1.jpg" title="[微醺小酒馆] 有酒有音乐 不打烊酒馆">
+                                    <div class="ej">
+                                        <p>1067万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[微醺小酒馆] 有酒有音乐 不打烊酒馆</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单11.jpg" title="[出门大作战] 合着音乐不紧不慢">
+                                    <div class="ej">
+                                        <p>1654万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[出门大作战] 合着音乐不紧不慢</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单12.jpg" title="[爱恋银河] 跨越星河来见你">
+                                    <div class="ej">
+                                        <p>1345万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[爱恋银河] 跨越星河来见你</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单13.jpg" title="[宝贝的八音盒] 10万宝贝选择的哄睡音乐">
+                                    <div class="ej">
+                                        <p>2896万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[宝贝的八音盒] 10万宝贝选择的哄睡音乐</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单14.jpg" title="[下班快乐] 下班路上 随轻快节拍放空大脑">
+                                    <div class="ej">
+                                        <p>2673万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[下班快乐] 下班路上 随轻快节拍放空大脑</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单15.jpg" title="[都市夜行] 复古迷情与都市夜晚的邂逅">
+                                    <div class="ej">
+                                        <p>1083万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[都市夜行] 复古迷情与都市夜晚的邂逅</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单16.jpg" title="[轻音乐] 耳机里藏着生活的解药">
+                                    <div class="ej">
+                                        <p>356万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[轻音乐] 耳机里藏着生活的解药</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单17.jpg" title="[双倍快乐] 听了心情会变好">
+                                    <div class="ej">
+                                        <p>2032万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[双倍快乐] 听了心情会变好</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单18.jpg" title="[回忆时刻] 那些触动心灵的熟悉旋律">
+                                    <div class="ej">
+                                        <p>764万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[回忆时刻] 那些触动心灵的熟悉旋律</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单19.jpg" title="[逃离城市计划] 别赶路 去感受路">
+                                    <div class="ej">
+                                        <p>1078万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <a><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[逃离城市计划] 别赶路 去感受路</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                                <td>
+                                    <img src="img/歌单20.jpg" title="[正宗好货] 请打开随机播放收听">
+                                    <div class="ej">
+                                        <p>2789万</p><img src="img/耳机1.png">
+                                        <div class="yx" id="tb">
+                                            <audio><img src="img/运行1.png" ></a>
+                                        </div>
+                                    </div>
+                                    <p class="wz"><a href="专辑界面.html">[正宗好货] 请打开随机播放收听</a></p>
+                                    <p class="wz1"><a href="专辑界面.html">by  云音乐官方歌单</a><img src="img/vip.png"/></p>
+                                </td>
+                            </tr>
+                            </table>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>
+       
+
+        <!-- 底部区域 -->
+        <div class="footer">
+            <ul>
+                <li>
+                    <a>服务条款</a>&nbsp;|
+                </li>
+                <li>
+                    <a>隐私政策</a>&nbsp;|
+                </li>
+                <li>
+                    <a>儿童隐私政策</a>&nbsp;|
+                </li>
+                <li>
+                    <a>版权投诉</a>&nbsp;|
+                </li>
+                <li>
+                    <a>投资者关系</a>&nbsp;|
+                </li>
+                <li>
+                    <a>广告合作</a>&nbsp;|
+                </li>
+                <li>
+                    <a>廉正举报</a>&nbsp;|
+                </li>
+                <li>
+                    <a>联系我们</a> 
+                </li>
+            </ul>
+        </div>
+        <div class="footer_bq"><p>&copy; 2022-11-25-数技20105-20肖世顺/18饶灿</p></div>
+
+        <!-- 播放器 -->
+        <div class="playbar">
+            <div class="p_wrap">
+                <!-- 播放按钮 -->
+                <div class="playbtns">
+                    <a class="prv" href="javascript:;" title="上一首"></a>
+                    <a class="play" href="javascript:;" title="播放/暂停"></a>
+                    <a class="next" href="javascript:;" title="下一首"></a>
+                </div>
+
+                <!-- 歌曲图片 -->
+                <div class="songhead">
+                    <img src="img/songhead.jpg">
+                </div>
+                
+                <!-- 进度条播放时间 -->
+                <div class="play_more">
+                    <div class="playwrap">
+                        <div class="playinfo">
+                            <a class="ellipsis songname" href="javascript:;" title="紫荆花盛开">紫荆花盛开</a>
+                            <a href="javascript:;" class="singer_name" title="李荣浩/梁咏琪">李荣浩/梁咏琪</a>
+                        </div>
+                    </div>
+
+                    <!-- 进度条 -->
+                    <div class="progressbar">
+                        <!-- 进度条背景 -->
+                        <div class="barbg"></div>
+
+                        <!-- 当前播放进度条 -->
+                        <div class="cur">
+                            <span class="btn"></span>
+                        </div>
+
+                        <!-- 播放时间 -->
+                        <div class="playtime">
+                            <em>01:33</em>/03:11
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 收藏，分享 -->
+                <div class="optionwrap">
+                    <a class="add" href="javascript:;" title="收藏">收藏</a>
+                    <a class="share" href="javascript:;" title="分享">分享</a>
+                </div>
+
+                <!-- 音量控制，循环方式，播放列表 -->
+                <div class="ctrwrap">
+                    <!-- 音量控制 -->
+                    <a href="javascript:;" title="" class="volumeicon"></a>
+                    <!-- 循环方式 -->
+                    <a href="javascript:;" title="" class="shuffleicon"></a>
+                    <!-- 播放列表 -->
+                    <a href="javascript:;" title="" class="listicon">10</a>
+                </div>
+
+                <!-- 右边锁头 -->
+                <div class="lockingbtn">
+                    <a href="javascript:;" class="lockbtn"></a>
+                </div>
+                    
+            </div>
+        </div>
+
+        <!-- 回到顶部top -->
+        <a href="javascript:;" class="gotopbtn" onclick="topFunction()" id="myBtn"></a>
+
+
+    </div>
+
+   
+    <script type="text/javascript" src="js/回到顶部.js"></script>
+    <script type="text/javascript" src="js/歌单.js"></script>
+
+</body>
+</html>

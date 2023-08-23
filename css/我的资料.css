@@ -1,0 +1,438 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#all{
+    width: 1490px;
+    height: 1550px;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+.head{
+    width: 1490px;
+    height: 107px;
+}
+/* 导航栏样式 */
+.head-top{
+    width: 1490px;
+    height: 70px;
+    background-color: rgb(42, 37, 37);
+    float: left;
+    border-bottom: 4px solid red;
+}
+.head-top ul{
+    margin-left: 100px;
+    width:auto;
+    height: 70px;
+    float: left;
+}
+.head-top .img1{
+    height: 70px;
+    margin-left: 100px;
+    float: left;
+    margin-right: 20px;
+}
+.head-top ul li{
+    float: left;
+    height: 70px;
+    width: 90px;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+}
+.head-top ul li a{
+    text-decoration: none;
+    color: white;
+    width: 90px;
+    height: 70px;
+    display: block;
+}
+.head-top ul li a:hover{
+    background-color:#0a0909 ;
+}
+/* 黑色：0a0909，红色：d40505 */
+.head-top ul li.selected{
+    /* background-color: aqua; */
+    background-image: url('../img/导航栏1.png');
+    width: 90px;
+    height: 70px;  
+}
+input::-webkit-input-placeholder{   /* 使用webkit内核的浏览器 */
+        color: #9e9a9a;
+        padding-left: 10px;
+    }
+.head-top ul input{
+    float: left;
+    height: 30px;
+    border-radius: 40px;
+    margin-left: 60px;
+    margin-top: 18px;
+    text-align: center;
+}
+.head-top ul button{
+    float: left;
+    border-radius: 40px;
+    width: 90px;
+    height: 34px;
+    margin-top: 18px;
+    background-color: black;
+    border: 1px solid rgb(108, 103, 103);
+    margin-left: 10px;
+    font-size: 10px;
+}
+.head-top ul button a{
+    text-decoration: none;
+    color: white;
+}
+.head-top ul button:hover{
+    border: 1px solid rgb(233, 230, 230);
+}
+.head-top .img2{
+    float: left;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+/* 主代码 */
+.main{
+    background-color: #ffffff;
+    float: left;
+    width: 900px;
+    height: 1350px;
+    margin-left: 250px;
+    border:1px solid #bebdbd;
+    padding: 40px;
+}
+
+/* .main_top{
+    width: 1490px;
+} */
+
+.main_top img{
+    width: 188px;
+    height: 188px;
+    float: left;
+    margin-right: 40px;
+    border: 1px solid #bebdbd;
+}
+.main_top .head-r{
+    width: 670px;
+    height: 168px;
+    float: left;
+}
+/* 头部1 */
+.head-c1{
+    width: 670px;
+    height: 36px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.head-c1 .name{
+    float: left;
+    margin-top: 3px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 22px;
+}
+.head-c1 .dj{
+    width: 46px;
+    height: 20px;
+    border-radius: 30px;
+    border: 2px solid #bebdbd;
+    overflow: hidden;
+    line-height: 21px;
+    color: #e03a24;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    float: left;
+    margin: 8px 0 0 15px;
+}
+.head-c1 .img{
+    width: 20px;
+    height: 20px;
+    float: left;
+}
+.head-c1 img{
+   border: none;
+   margin: 8px 0px 0px 10px;
+}
+.head-c1 .btn{
+    width: 112px;
+    height: 31px;
+    line-height: 31px;
+    float: right;
+    border: 1px solid #bebdbd;
+    background-color: #eaeaea;
+    vertical-align: top;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+    border-radius: 5px;
+    margin: 0px 5px 0px 0px;
+}
+/* 头部2 */
+.head-c2{
+    width: 670px;
+    height: 41px;
+}
+.head-c2 ul{
+    width: 670px;
+    height: 41px;
+}
+.head-c2 ul li{
+    height: 40px;
+    float: left;
+    padding: 0 40px 0 20px;
+    border-left: 1px solid #ddd;
+    list-style: none;
+}
+.head-c2 ul .li{
+    border: none;
+}
+.head-c2 ul li strong{
+    width: 26px;
+    height: 27px;
+    font-size: 24px;
+    display: block;
+    margin-top: -4px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.head-c2 ul li span{
+    width: 26px;
+    height: 16px;
+    text-indent: 2px;
+    cursor: pointer;
+    font-size: 12px;
+}
+/* 头部3 */
+.head-c3{
+    width: 670px;
+    height: 20px;
+    font-size: 12px;
+    margin: 15px 0 5px 0;
+    color: #666;
+}
+/* 头部4 */
+.head-c4{
+    width: 670px;
+    height: 20px;
+}
+.head-c4 span{
+    margin-bottom: 5px;
+    line-height: 21px;
+    float: left;
+    color: #666;
+    font-size: 12px;
+}
+.head-c4 .img2{
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    border: none;
+    float: right;
+    margin: 0px 0px 0px 15px;
+}
+
+/* 听歌排行 */
+.bsb{
+    width: 900px;
+    border-collapse: collapse;
+    float: left;
+}
+
+.bsb .bsb_head img{
+    width: 150px;
+    height: 150px;
+}
+.bsb_con{
+    width:473px ;
+    height: 114px;
+    float: left;
+    margin: -140px 0 0 187px;
+}
+/* 身体 */
+.bsb_main .bsb_main_top{
+    border-bottom: 3px solid #cb0202;
+    width: 900px;
+    height: 35px;
+    margin-top: 30px;
+}
+.bsb_main .bsb_main_top h3{
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    font-family: "宋体";
+    font-size: 20px;
+    margin-top: 4px;
+}
+.bsb_main .bsb_main_top p{
+    width: 90px;
+    height: 25px;
+    float: left;
+    line-height: 25px;
+    margin-top: 9px;
+    font-size: 13px;
+}
+.bsb_main .bsb_main_top span{
+    float: left;
+    margin-left: 560px;
+    margin-top: 15px;
+    font-size: 13px;
+    float: right;
+}
+.bsb_main .bsb_main_top span strong{
+    color: #c10d0d;
+}
+.bsb_main_middle{
+    width: 900px;
+    height: auto;
+    margin-top: 10px;
+}
+.bsb_main_middle table{
+    width: 900px;
+    height: auto;
+    border: 1px solid #9e9a9a;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.bsb_main_middle table tr{
+    width: 660px;
+    height: 20px;
+}
+
+.bsb_main_middle table thead tr td{
+    width: 165px;
+    text-align:left;
+    height: 50px;
+    line-height: 50px;
+    background-color: #dddcdc;
+    border: 1px solid #c6c4c4;
+    padding-left: 5px;
+}
+.bsb_main_middle table tr td{
+    width: 165px;
+    text-align:left;
+    line-height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    font-size: 12px;
+    padding-left: 5px;
+}
+.bsb_main_middle table tr:nth-child(odd){
+    background-color: #f0efef;
+}
+
+/* 我创建的歌单，我收藏的歌单 */
+.rmtj{
+    width: 900px;
+    height: auto;
+    float: left;
+    margin: 50px 0px 0px 0px;
+}
+.rmtj h3{
+    width: 900px;
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 3px solid #cb0202;
+}
+.rmtj table{
+    width: 900px;
+}
+.rmtj tr td img{
+    width: 150px;
+    height: 150px;
+	margin-top: 10px;
+}
+.rmtj tr td{
+    width: 150px;
+    margin-right: 37px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+.rmtj .wz{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.rmtj .wz a{
+    color: #000;
+    text-decoration: none;
+}
+.rmtj .wz a:hover{
+    text-decoration: underline;
+}
+.rmtj .wz1{
+    font-size: 5px;
+	margin-top: -25px;
+}
+.rmtj .wz1 a{
+    color: gray;
+    text-decoration: none;
+}
+.rmtj .wz1 a:hover{
+    text-decoration: underline;
+}
+.rmtj .ej{
+    display: block;
+    width: 150px;
+    background-color: #0a0909;
+    opacity: 0.6;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -34px;
+    font-size: 8px;
+}
+.rmtj .ej p{
+     color:white ;
+     font-size: 10px;
+     margin-left: 40px;
+}
+.rmtj td .ej img{
+    width:25px ;
+    height: 25px;
+    margin-left: 10px;
+    float: left;
+    margin-top: -28px;
+}
+.rmtj .ej .yx img{
+    width: 25px;
+    height: 25px;
+     float: left;
+    margin-left: 115px;
+    margin-top: -28px;
+}
+.rmtj .wz1 img{
+    width: 15px;
+    height: 15px;
+     float: left;
+    margin-left: 105px;
+    margin-top: -15px;
+}
+
+/* 回到顶部 */
+a.gotopbtn{
+    display: block;
+    position: fixed;
+    text-indent: -9999px;
+    width: 49px;
+    height: 44px;
+    bottom: 160px;
+    left: 1350px;
+    background-image: url("../img/回到顶部.png");
+    background-size: 49px 44px;
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* .lbt{
+    
+} */
+.wrap {
+    float: left;
+    width: 500px;
+    height: 280px;
+    margin: auto;
+    /* perspective: 500px; */
+    position: relative;
+}
+
+#wrap-ul {
+    width: 500px;
+    height: 280px;
+    list-style: none;
+    position: relative;
+}
+
+.wrap img {
+    /* border-radius: 15%; 
+        这里可以修改图片的大小，最好改的时候把ul和li的一并改为相同的*/
+        transition: all 1s ease 0s;
+        width: 750px;
+        height: 280px;
+        display: inline-block;
+        opacity: 0;
+        margin-left: 250px;
+}
+.cc img {
+    opacity: 1;
+}
+
+#wrap-ul li {
+    width: 500px;
+    height: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wrap span {
+    width: 40px;
+    height: 70px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 145px;
+    margin-top: -170px;
+    z-index: 11;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.5s ease 0s;
+}
+
+.wrap span:hover {
+    opacity: 1;
+}
+
+.wrap #toright1 {
+    margin-top: -170px;
+    margin-left: 1300px;
+}
+
+.page-container {
+    position: absolute;
+    margin-top: 340px;
+    margin-left: 580px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.page {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: white;
+    cursor: pointer;
+}
+.page.active {
+    background: red;
+}
+
+

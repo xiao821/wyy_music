@@ -1,0 +1,147 @@
+.head{
+	width: 800px;
+	height: auto;
+	margin: auto;
+	background-color: #f4f4f4;
+	box-shadow: 3px 4px 15px black;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+.head h2{
+	text-align: center;
+}
+.dz{
+	position: absolute;
+}
+.dz td{
+	display: block;
+	width: 170px;
+	margin-left: 10px;
+}
+.dz1{
+	position: relative;
+	left: 200px;
+}
+.dz1 td{
+	display: block;
+	width: 170px;
+	margin-left: 40px;
+}
+/* .dz2{
+	position: absolute;
+	top: 32px;
+	left: 485px;
+}
+.dz2 td{
+	display: block;
+	width: 170px;
+	height: auto;
+	margin-left: 10px;
+}  */
+.js{
+	/* border: 2px solid rgb(8, 68, 46); */
+	text-align: right;
+	width: 350px;
+	padding: 10px;
+	height: 160px;
+	margin-top: 10px;
+    margin-left: 426px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.main{
+	width: 800px;
+	height: 755px;
+	margin: auto;
+	background-color: #f4f4f4;
+	box-shadow: 3px 4px 15px black;
+	border-radius: 10px;
+    margin-bottom: 20px;
+}
+.main h3{
+	padding-top: 20px;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+}
+.main h3 span{
+	position: absolute;
+	left: 10px;
+}
+/* .main span{
+	display: block;
+	padding-top: 20px;
+} */
+/* .Tb{
+	width:800px ;
+}
+.Tb td{
+	width: 100px;
+	text-align: center;
+} */
+.tb{
+	margin-left: 50px;
+}
+.tb td img{
+	width: 150px;
+	height: auto;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+}
+.tb td{
+	text-align: center;
+	width: 200px;
+}
+.tb .tb2{
+	color: rgb(30, 29, 29);
+}
+.tb1{
+    width: 400px;
+    height: 60px;
+    background-color: #de2525;
+    margin-left: 400px;
+}
+.tb1 td{
+	height: 50px;
+	width: 150px;
+	text-align: center;
+	line-height: 50px;
+	border: 2px solid white;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.tb1 span{
+	margin: 0px 5px 0px 5px;
+	color: white;
+	font-size: 25px;
+}
+
+.foot{
+	width: 800px;
+	height: 420px;
+	margin: auto;
+	background-color: #4e9d74;
+	box-shadow: 3px 4px 15px black;
+	border-radius: 10px;
+}
+.foot h3{
+	padding-top: 20px;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+}
+.foot p{
+	margin-top: 20px;
+	width: 800px;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 20px;
+}
+.foot span{
+	width: 300px;
+	margin-left: 535px;
+}

@@ -1,0 +1,342 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#all{
+    width: 1490px;
+    height: 1600px;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+.head{
+    width: 1490px;
+    height: 107px;
+}
+/* 导航栏样式 */
+.head-top{
+    width: 1490px;
+    height: 70px;
+    background-color: rgb(42, 37, 37);
+    float: left;
+}
+.head-top ul{
+    margin-left: 100px;
+    width:auto;
+    height: 70px;
+    float: left;
+}
+.head-top .img1{
+    height: 70px;
+    margin-left: 100px;
+    float: left;
+    margin-right: 20px;
+}
+.head-top ul li{
+    float: left;
+    height: 70px;
+    width: 90px;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+}
+.head-top ul li a{
+    text-decoration: none;
+    color: white;
+    width: 90px;
+    height: 70px;
+    display: block;
+}
+.head-top ul li a:hover{
+    background-color:#0a0909 ;
+}
+/* 黑色：0a0909，红色：d40505 */
+.head-top ul li.selected{
+    /* background-color: aqua; */
+    background-image: url('../img/导航栏1.png');
+    width: 90px;
+    height: 70px;  
+}
+input::-webkit-input-placeholder{   /* 使用webkit内核的浏览器 */
+        color: #9e9a9a;
+        padding-left: 10px;
+    }
+.head-top ul input{
+    float: left;
+    height: 30px;
+    border-radius: 40px;
+    margin-left: 60px;
+    margin-top: 18px;
+    text-align: center;
+}
+.head-top ul button{
+    float: left;
+    border-radius: 40px;
+    width: 90px;
+    height: 34px;
+    margin-top: 18px;
+    background-color: black;
+    border: 1px solid rgb(108, 103, 103);
+    margin-left: 10px;
+    font-size: 10px;
+}
+.head-top ul button a{
+    text-decoration: none;
+    color: white;
+}
+.head-top ul button:hover{
+    border: 1px solid rgb(233, 230, 230);
+}
+.head-top .img2{
+    float: left;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+
+.head-top1{
+    width: 1490px;
+    height: 35px;
+    background-color: #d40505;
+    float: left;
+    border-top: 1px solid #0a0909;
+}
+.head-top1 ul{
+    margin-left: 394px;
+    width:auto;
+    height: 35px;
+    float: left;
+}
+.head-top1 ul li{
+    float: left;
+    height: 25px;
+    width: 100px;
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+.head-top1 ul li a{
+    text-decoration: none;
+    color: white;
+    /* width: 90px; */
+    height: 25px;
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+}
+.head-top1 ul li a:hover{
+    background-color:#9b0909 ;
+    border-radius: 30px;
+}
+/* 黑色：0a0909，红色：d40505 */
+.head-top1 ul li.selected{
+    background-color: #9b0909;
+    border-radius: 30px;
+}
+
+/* 主页 */
+.main{
+    background-color: #ffffff;
+    float: left;
+    width: 980px;
+    height: 1350px;
+    margin-left: 250px;
+    border:1px solid #bebdbd;
+    
+}
+
+/* 左边 */
+.left{
+    width: 180px;
+    height: 1350px;
+    float: left;
+    background-color: #f8f5f5;
+    border-bottom: 1px solid #c6c4c4;
+    border-right: 1px solid #c6c4c4;
+}
+/* 云音乐特色榜 */
+.left .left_musicer{
+    width: 180px;height: 248px;
+    margin-top: 50px;
+}
+.left .left_musicer .left_musicer_tj{
+    width: 160xp;
+    padding: 0 10px 20px 10px;
+}
+.left_musicer .left_musicer_tj h2{
+    font-family: "宋体";
+    font-size: 20px;
+    margin:10px 10px 15px 10px;
+}
+
+.left_musicer .left_musicer_tj ul{
+    width: auto;height: 60px;
+}
+
+.left_musicer .left_musicer_tj ul li{
+    width: 160px;height: 62px;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    /* position: absolute; */
+    float: left;
+    cursor: pointer;
+    font-size: 10px;
+}
+.left_musicer .left_musicer_tj ul li a{
+    padding: 0px 0px 0px 30px;
+    text-decoration: none;
+    color: #0a0909;
+}
+.left .left_musicer .left_musicer_kind{
+    width: 160xp;
+    height: 132px;
+    padding: 0px 10px 20px 10px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-top: 20px;
+}
+.left_musicer .left_musicer_kind h2{
+    font-family: "宋体";
+    font-size: 20px;
+    margin:0px 10px 15px 10px;
+}
+.left_musicer .left_musicer_kind ul{
+    width: auto;height: 60px;
+}
+.left_musicer .left_musicer_kind ul li{
+    width: 160px;height: 62px;
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    /* position: absolute; */
+    float: left;
+    cursor: pointer;
+    font-size: 10px;
+}
+.left_musicer .left_musicer_kind ul li a{
+    padding: 0px 0px 0px 30px;
+    text-decoration: none;
+    color: #0a0909;
+}
+.left_musicer ul li a:hover{
+    text-decoration: underline;
+}
+.left_musicer ul li.selected{
+    width:160px ;
+    height: 30px;
+    background-color: #e6e6e6;
+}
+
+/* 主页 */
+.gs_main{
+    float: none;
+    width: 720px;
+    height: 1350px;
+    margin-left: 180px;
+    padding: 40px
+}
+.gs_main .item{
+    display: none;
+}
+/* 入驻歌手 */
+.main .rzgs_title{
+    width:720px ;
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.main .rzgs_title h3{
+    font-style: "宋体";font-style: normal;font-size: 24px;
+}
+
+.rzgs_con{
+    width:720px ;
+    height:180px ;
+    margin-top: 20px;
+    position: absolute;
+}
+.rzgs_con{
+    width: 720px;
+    height: 400px;
+    position: relative; 
+}
+.rzgs_con ul{
+    position: absolute;
+    width:720px ;
+    height: 180px;
+}
+.rzgs_con ul li{
+    float: left;
+    width:130px ;
+    height: 178px;
+    list-style: none;
+    padding: 0 0 20px 12px;
+}
+.rzgs_con ul li p a{
+    color: #000;
+    text-decoration: none;
+    font-size: 12px;
+}
+.rzgs_con ul li p a:hover{
+    text-decoration: underline;
+}
+/* 热门歌手 */
+.main .rmgs_title{
+    width:720px ;
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.main .rmgs_title h3{
+    font-style: "宋体";font-style: normal;font-size: 24px;
+}
+
+/* 底部区域 */
+.footer{
+    width: 1490px;
+    height: 50px;
+    float: left;
+    border-top:1px solid #b9b7b7;
+}
+.footer ul{
+    width: 700px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+.footer ul li{
+    width: 80px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    color: #4b4848;
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #4b4848;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer_bq{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    /* float: left; */
+    margin: auto;
+}
+
+/* 回到顶部 */
+a.gotopbtn{
+    display: block;
+    position: fixed;
+    text-indent: -9999px;
+    width: 49px;
+    height: 44px;
+    bottom: 160px;
+    left: 1280px;
+    background-image: url("../img/回到顶部.png");
+    background-size: 49px 44px;
+}

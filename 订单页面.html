@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="css/订单.css" rel="stylesheet">
+	</head>
+	<body  onload="total()">
+		<div class="head">
+			<h2>选择收货地址</h2>
+			<table>
+				<tr class="dz">
+					<td><input type="radio" name="a" onclick="xz(this)" class="a"></td>
+					<td>姓名：<strong id="name1">小饶</strong></td>
+					<td>电话：<strong id="tel1">134xxxxxxxxx</strong></td>
+					<td>地址：<strong id="add1">湖南省常德市鼎城区湖南应用技术学院</strong></td>
+				</tr>
+				<tr class="dz1">
+					<td><input type="radio" name="a" onclick="xz(this)" class="a"></td>
+					<td>姓名：<strong>小萧123</strong></td>
+					<td>电话：<strong>191xxxxx4434</strong></td>
+					<td>地址：<strong>湖南省益阳市赫山区兰溪镇</strong></td>
+				</tr>
+				<!-- <tr class="dz2">
+					<td><input type="checkbox"></td>
+					<td>姓名：小萧</td>
+					<td>电话：134xxxxxxxxx</td>
+					<td>地址：湖南省常德市鼎城区湖南应用技术学院</td>
+				</tr> -->
+			</table>
+		</div>
+		<div class="main">
+			
+			<h3><span><a href="商城.html" style="text-decoration: none;color: rgb(195, 3, 3);font-weight: bold;"><<</a></span>商品订单信息</h3>
+			
+			<hr style="background-color: #6d6d6d; height: 2px;border: none;"/>
+			
+			<!-- 订单信息 -->
+			<div class="tb">
+				<table>
+ 					<tr class="tb2">
+						<td>专辑图片</td>
+						<td>专辑名称</td>
+						<td>专辑价格</td>
+						<td>专辑数量</td>
+					</tr>
+					<tr>
+						<td><img src="img/新碟上架22.jpg"></td>
+						<td>Michael Jackson</td>
+						<td>￥<span name="price">150</span></td>
+						<td><span name="number" class="number">1</span></td>
+					</tr>
+					<tr>
+						<td><img src="img/新碟上架21.jpg"></td>
+						<td>LANDER</td>
+						<td>￥<span name="price">257</span></td>
+						<td><span name="number" class="number">1</span></td>
+					</tr>
+					
+				</table>
+			</div>
+
+			<!-- 结算信息2 -->
+			<div class="js" >
+				<p>实付款：￥<strong id="totalPrice1">0</strong></p>
+				<p>收货人：<strong id="a-name"></strong></p>
+				<p>电话：<strong id="a-tel"></strong></p>
+				<p>地址：<strong id="a-add"></strong></p>
+			</div>
+			
+			<!-- 结算信息1 -->
+			<div class="tb1">
+				<table>
+					<tr>
+						<td>共<span id="totalCount">0</span>件商品</td>
+						<td>合计：￥<span id="totalPrice">0</span></td>
+						<td>提交订单</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			
+		</div>
+		
+		<script  type="text/javascript" src="js/订单.js"></script>
+	</body>
+</html>

@@ -1,0 +1,336 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#all{
+    width: 1490px;
+    height: 1700px;
+    margin: auto;
+    background-color: #f5f5f5;
+}
+.head{
+    width: 1490px;
+    height: 107px;
+}
+/* 导航栏样式 */
+.head-top{
+    width: 1490px;
+    height: 70px;
+    background-color: rgb(42, 37, 37);
+    float: left;
+}
+.head-top ul{
+    margin-left: 100px;
+    width:auto;
+    height: 70px;
+    float: left;
+}
+.head-top .img1{
+    height: 70px;
+    margin-left: 100px;
+    float: left;
+    margin-right: 20px;
+}
+.head-top ul li{
+    float: left;
+    height: 70px;
+    width: 90px;
+    display: block;
+    line-height: 70px;
+    text-align: center;
+}
+.head-top ul li a{
+    text-decoration: none;
+    color: white;
+    width: 90px;
+    height: 70px;
+    display: block;
+}
+.head-top ul li a:hover{
+    background-color:#0a0909 ;
+}
+/* 黑色：0a0909，红色：d40505 */
+.head-top ul li.selected{
+    /* background-color: aqua; */
+    background-image: url('../img/导航栏1.png');
+    width: 90px;
+    height: 70px;  
+}
+input::-webkit-input-placeholder{   /* 使用webkit内核的浏览器 */
+        color: #9e9a9a;
+        padding-left: 10px;
+    }
+.head-top ul input{
+    float: left;
+    height: 30px;
+    border-radius: 40px;
+    margin-left: 60px;
+    margin-top: 18px;
+    text-align: center;
+}
+.head-top ul button{
+    float: left;
+    border-radius: 40px;
+    width: 90px;
+    height: 34px;
+    margin-top: 18px;
+    background-color: black;
+    border: 1px solid rgb(108, 103, 103);
+    margin-left: 10px;
+    font-size: 10px;
+}
+.head-top ul button a{
+    text-decoration: none;
+    color: white;
+}
+.head-top ul button:hover{
+    border: 1px solid rgb(233, 230, 230);
+}
+.head-top .img2{
+    float: left;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-top: 18px;
+    margin-left: 30px;
+}
+
+.head-top1{
+    width: 1490px;
+    height: 35px;
+    background-color: #d40505;
+    float: left;
+    border-top: 1px solid #0a0909;
+}
+.head-top1 ul{
+    margin-left: 394px;
+    width:auto;
+    height: 35px;
+    float: left;
+}
+.head-top1 ul li{
+    float: left;
+    height: 25px;
+    width: 100px;
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+.head-top1 ul li a{
+    text-decoration: none;
+    color: white;
+    /* width: 90px; */
+    height: 25px;
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+}
+.head-top1 ul li a:hover{
+    background-color:#9b0909 ;
+    border-radius: 30px;
+}
+/* 黑色：0a0909，红色：d40505 */
+.head-top1 ul li.selected{
+    background-color: #9b0909;
+    border-radius: 30px;
+}
+
+/* 主页 */
+.main{
+    background-color: #ffffff;
+    float: left;
+    width: 900px;
+    height: 1350px;
+    margin-left: 250px;
+    border:1px solid #bebdbd;
+    padding: 40px
+}
+/* 热门新碟 */
+.main .rmxd_title{
+    width:900px ;
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+}
+.main .rmxd_title h3{
+    font-style: "宋体";font-style: normal;font-size: 24px;
+}
+.xdsj .item{
+    display: none;
+}
+.xdsj{
+    width:980px ;
+    height:180px ;
+    margin-top: 20px;
+    position: absolute;
+}
+.xdsj .roll{
+    width: 980px;
+    height: 180px;
+    position: relative; 
+}
+.xdsj .roll ul{
+    position: absolute;
+    width:900px ;
+    height: 180px;
+}
+.xdsj .roll ul li{
+    float: left;
+    width:153px ;
+    height: 178px;
+    list-style: none;
+    padding: 0 0 30px 26px;
+}
+/* 唱片封面div */
+.cover_img{
+    width: 10px;
+    height: 100px;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    margin-bottom: 37px;
+}
+.cover_img img{
+    width: 130px;
+    height: 130px;
+    box-shadow: 2px 3px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.cover_mask_icon_play{
+    background-image: url("../img/运行1.png");
+    background-size: 32px 32px;
+    position: absolute;
+    z-index: 14;
+    left: 90px;
+    bottom: -22px;
+    width: 32px;
+    height: 32px;
+    display: none;
+    /* background-repeat: no-repeat;
+    background-position: 110px 70px;*/
+} 
+.xdsj .roll ul li .cover_img:hover .cover_mask_icon_play{
+    display: block;
+}
+.xdsj .roll ul li p.song_name{
+    color: #000;
+    font-size: 12px;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.xdsj .roll ul li p.song_name a{
+    color: #000;
+    text-decoration: none;
+}
+.xdsj .roll ul li p.singer_name{
+    color: #000;
+    font-size: 12px;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    margin-top: 2px;
+}
+.xdsj .roll ul li p.singer_name a{
+    color: #000;
+    text-decoration: none;
+}
+.xdsj .roll ul li p.song_name a:hover{
+    text-decoration: underline;
+}
+.xdsj .roll ul li p.singer_name a:hover{
+    text-decoration: underline;
+}
+
+/* 全部新碟 */
+.main-head{
+    width:900px ;
+    height: 40px;
+    border-bottom: 2px solid #c20c0c;
+    margin-top: 440px;
+}
+.main-head h3{
+    font-style: "宋体";font-style: normal;font-size: 24px;
+     width: 140px;
+    height: 30px;
+    float: left;
+}
+.main-head h3 a{
+    text-decoration: none;
+    color: black;
+}
+.main-head ul{
+    height: 30px;
+    line-height: 30px;
+    float: left;
+    margin:5px 0px 0px -20px;
+}
+.main-head li{
+    list-style: none;
+    height: 30px;
+    line-height: 30px;
+    width: 50px;
+    float: left;
+    text-align: center;
+}
+.main-head li a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #0a0909;
+}
+.main-head ul li a:hover{
+    text-decoration: underline;
+    /* color: rgb(198, 63, 63); */
+}
+
+/* 底部区域 */
+.footer{
+    width: 1490px;
+    height: 50px;
+    float: left;
+    border-top:1px solid #b9b7b7;
+}
+.footer ul{
+    width: 700px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+.footer ul li{
+    width: 80px;
+    font-size: 12px;
+    float: left;
+    text-align: center;
+    color: #4b4848;
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: #4b4848;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
+.footer_bq{
+    width: 350px;
+    height: 50px;
+    line-height: 50px;
+    /* float: left; */
+    margin: auto;
+}
+
+/* 回到顶部 */
+a.gotopbtn{
+    display: block;
+    position: fixed;
+    text-indent: -9999px;
+    width: 49px;
+    height: 44px;
+    bottom: 160px;
+    left: 1280px;
+    background-image: url("../img/回到顶部.png");
+    background-size: 49px 44px;
+}

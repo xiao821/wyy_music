@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/登录注册.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div class="container right-panel-active">
+    <!-- 注册 -->
+    <div class="container__form container--signup">
+      <form action="#" class="form" id="form1">
+        <h2 class="form__title">注 册</h2>
+        <input type="text" placeholder="用户名" class="input" />
+        <input type="text" placeholder="手机号码" class="input" />
+        <input type="text" placeholder="请输入验证码" CLmaxlength="6" class="YZM"/>
+        <input type="button" value="获取验证码"  onclick="settime(this);" class="YZM1"/>
+        <input type="password" placeholder="密码" class=" xg input " />
+        <input type="password" placeholder="确认密码" class="xg input" />
+        <button class="btn">注 册</button>
+      </form>
+    </div>
+
+    <!-- 登录 -->
+    <div class="container__form container--signin">
+      <form action="#" class="form" id="form2">
+        <h2 class="form__title">登 录</h2>
+        <input type="email" placeholder="手机号码" class="input" />
+        <input type="password" placeholder="密码" class="input" />
+        <button class="btn"><a href="./主页.html">登 录</a></button>
+      </form>
+    </div>
+
+    <!-- Overlay -->
+    <div class="container__overlay">
+      <div class="overlay">
+        <div class="overlay__panel overlay--left">
+          <button class="btn" id="signIn">登 录</button>
+        </div>
+        <div class="overlay__panel overlay--right">
+          <button class="btn" id="signUp">注 册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const signInBtn = document.getElementById("signIn");
+    const signUpBtn = document.getElementById("signUp");
+    const fistForm = document.getElementById("form1");
+    const secondForm = document.getElementById("form2");
+    const container = document.querySelector(".container");
+
+    signInBtn.addEventListener("click", () => {
+      container.classList.remove("right-panel-active");
+    });
+
+    signUpBtn.addEventListener("click", () => {
+      container.classList.add("right-panel-active");
+    });
+  </script>
+</body>
+</html>

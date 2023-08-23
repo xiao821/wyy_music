@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/排行榜.css">
+    <link rel="stylesheet" type="text/css" href="css/播放器.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="all">
+
+        <!-- 导航栏头部 -->
+        <div id="head">
+            <div class="head-top">
+                <ul>
+                    <img src="img/wyy.png" class="img1">
+                    <li class="selected"><a href="主页.html">发现音乐</a></li>
+                    <li><a href="我的音乐.html">我的音乐</a></li>
+                    <li><a href="关注.html">关注</a></li>
+                    <li><a href="商城.html">商城</a></li>
+                    <li><a href="javascript:;">音乐人</a></li>
+                    <li><a href="下载客户端.html">下载客户端</a></li>
+                    <input type="text" placeholder="音乐/视频/电台/用户">
+                    <button><a href="创作者中心.html">创作者中心</a></button>
+                    <img src="img/tx.png" class="img2">
+                </ul>
+            </div>
+            <div class="head-top1">
+                <ul>
+                    <li><a href="主页.html">推荐</a></li>
+                    <li class="selected"><a href="排行榜.html">排行榜</a></li>
+                    <li><a href="歌单.html">歌单</a></li>
+                    <li><a href="主播电台.html">主播电台</a></li>
+                    <li><a href="歌手.html">歌手</a></li>
+                    <li><a href="新碟上架.html">新碟上架</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 主代码 -->
+        <div class="main">
+
+            <!-- 云音乐特色榜 -->
+            <div class="left">
+                <div class="left_music">
+                    <h2>云音乐特色榜</h2>
+                    <ul id="only">
+                        <li class="selected">
+                            <img src="img/榜单1.jpg">
+                            <p class="notice">飙升榜</p>
+                            <p class="notice1">刚刚更新</p>
+                        </li>
+                        <li>
+                            <img src="img/榜单2.jpg">
+                            <p class="notice">新歌榜</p>
+                            <p class="notice1">每天更新</p>
+                        </li>
+                        <li>
+                            <img src="img/榜单3.jpg">
+                            <p class="notice">原创榜</p>
+                            <p class="notice1">每周四更新</p>
+                        </li>
+                        <li>
+                            <img src="img/榜单4.jpg">
+                            <p class="notice">热歌榜</p>
+                            <p class="notice1">每天更新</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left_music1">
+                    <h2>全球媒体榜</h2>
+                    <ul id="only1">
+                        <li>
+                            <img src="img/榜单5.jpg">
+                            <p class="notice">黑胶VIP爱听榜</p>
+                            <p class="notice1">每周四更新</p>
+                        </li>
+                        <li>
+                            <img src="img/榜单6.jpg">
+                            <p class="notice">云音乐说唱榜</p>
+                            <p class="notice1">每周五更新</p>
+                        </li>
+                        <li>
+                            <img src="img/榜单7.jpg">
+                            <p class="notice">云音乐古典榜</p>
+                            <p class="notice1">每周四更新</p>
+                        </li>
+                        <li>
+                            <img src="img/榜单8.jpg">
+                            <p class="notice">云音乐电音榜</p>
+                            <p class="notice1">每周五更新</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 主页 -->
+            <div class="phb_main">
+                <!-- 飙升榜 -->
+                <div class="bsb item" style="display: block;">
+
+                    <!-- 头部 -->
+                    <div  class="bsb_head">
+                        <img src="img/榜单1.jpg">
+                        <div class="bsb_con">
+                            <h2>飙升榜</h2>
+                            <p>最近更新:11月25日(刚刚更新)</p>
+                            <div class="bsb_con_btn">
+                                <a class="an1"><i class="wz1">播放</i></a>
+                                <a class="an2"><i class="wz2">(39910)</i></a>
+                                <a class="an3"><i class="wz2">(13247)</i></a>
+                                <a class="an4"><i class="wz2">下载</i></a>
+                                <a class="an5"><i class="wz2">(21572)</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 身体 -->
+                    <div class="bsb_main">
+
+                        <div class="bsb_main_top">
+                            <h3>歌曲列表</h3>
+                            <p>100首歌</p>
+                            <span>播放<strong>435267</strong>次</span>
+                        </div>
+
+                        <div class="bsb_main_middle">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>标题</td>
+                                        <td>时长</td>
+                                        <td>歌手</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td><td>我看了56次日落</td><td>02:12</td><td>等一下就回家/爱兜</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td><td>我们打着光脚在风车下跑</td><td>02:12</td><td>李荣浩/梁咏琪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td><td>紫荆花盛开</td><td>02:12</td><td>虎皮蛋/抽口</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td><td>轻描淡写</td><td>02:12</td><td>AFMC黑子/嘉莹</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td><td>来年后少年</td><td>02:12</td><td>不是花火呀/伙计</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td><td>晴空烟火</td><td>02:12</td><td>LBI利比</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td><td>答案</td><td>02:12</td><td>杨坤/郭采洁</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td><td>人间烟火</td><td>02:12</td><td>陈翔</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td><td>轻描淡写</td><td>02:12</td><td>AFMC黑子/嘉莹</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td><td>来年后少年</td><td>02:12</td><td>不是花火呀/伙计</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td><td>晴空烟火</td><td>02:12</td><td>LBI利比</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td><td>答案</td><td>02:12</td><td>杨坤/郭采洁</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td><td>人间烟火</td><td>02:12</td><td>陈翔</td>
+                                    </tr>   
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- 评论区 -->
+                    <div class="pl">
+                        <div class="bsb_main_pl">
+                            <h3>评论</h3>
+                            <p>共3214条评论</p>
+                        </div>
+                        <div class="pl_write">
+                            <img src="img/评论.jpg">
+                            <textarea placeholder="评论"></textarea>
+                            <button><a>评论</a></button>
+                        </div>
+                        <!-- 精彩评论 -->
+                        <div class="pl_content">
+                            <h3>精彩评论</h3>
+                            <!-- 评论1 -->
+                            <div class="pl_content_item">
+                                <img src="img/评论区1.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>爱情的秋_:</strong>毋庸置疑。天份1551%，承蒙关照</p>
+                                </div>
+                                <!-- 时间，点赞，回复 -->
+                                <div class="pl_content_time">
+                                    <span>2012年10月26日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(123)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论2 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区2.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>-_-老鱼:</strong>许巍有《蓝莲花》高梨康治有《红莲》翁大涵有《白莲》马琪龙有《青莲》</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2021年11月23日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(43)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论3 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区3.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>夜夜太平长安:</strong>《大千世界》如果你听懂了，一定会为它鼓掌，一定会为它爸爸鼓掌</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2019年10月26日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(23)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 新歌榜 -->
+                <div class="bsb item">
+
+                    <!-- 头部 -->
+                    <div  class="bsb_head">
+                        <img src="img/榜单2.jpg">
+                        <div class="bsb_con">
+                            <h2>新歌榜</h2>
+                            <p>最近更新:11月25日(更新11首)</p>
+                            <div class="bsb_con_btn">
+                                <a class="an1"><i class="wz1">播放</i></a>
+                                <a class="an2"><i class="wz2">(41910)</i></a>
+                                <a class="an3"><i class="wz2">(32147)</i></a>
+                                <a class="an4"><i class="wz2">下载</i></a>
+                                <a class="an5"><i class="wz2">(5722)</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 身体 -->
+                    <div class="bsb_main">
+
+                        <div class="bsb_main_top">
+                            <h3>歌曲列表</h3>
+                            <p>100首歌</p>
+                            <span>播放<strong>435267</strong>次</span>
+                        </div>
+
+                        <div class="bsb_main_middle">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>标题</td>
+                                        <td>时长</td>
+                                        <td>歌手</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td><td>漫游</td><td>04:33</td><td>房东的猫</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td><td>绯红</td><td>04:15</td><td>桃德利</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td><td>对啊对啊</td><td>02:42</td><td>刘冲/西奥</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td><td>换乘点</td><td>03:33</td><td>旅行蜜蜂</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td><td>逃生舱</td><td>02:53</td><td>老番茄</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td><td>神秘关系</td><td>03:38</td><td>魏成宇</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td><td>天蝎噩梦</td><td>03:28</td><td>马也</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td><td>月球背面</td><td>03:10</td><td>辛巴/贰万</td>
+                                    </tr>  
+                                    <tr>
+                                        <td>9</td><td>艾丽</td><td>02:17</td><td>那奇沃夫</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td><td>七言</td><td>03:18</td><td>郭曲</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td><td>7 years</td><td>03:07</td><td>LUCK GRAHAM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td><td>大雨中</td><td>03:34</td><td>是二智啊</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td><td>陪在你身边</td><td>03:13</td><td>刘思达</td>
+                                    </tr>    
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- 评论区 -->
+                    <div class="pl">
+                        <div class="bsb_main_pl">
+                            <h3>评论</h3>
+                            <p>共3214条评论</p>
+                        </div>
+                        <div class="pl_write">
+                            <img src="img/评论.jpg">
+                            <textarea placeholder="评论"></textarea>
+                            <button><a>评论</a></button>
+                        </div>
+                        <!-- 精彩评论 -->
+                        <div class="pl_content">
+                            <h3>精彩评论</h3>
+                            <!-- 评论1 -->
+                            <div class="pl_content_item">
+                                <img src="img/评论区4.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>视界之外的世界:</strong>你们听情爱，我听许嵩。</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2022年11月26日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(3123)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论2 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区5.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>SYXSV:</strong>表白许嵩大千世界，期待6月12日许嵩新歌《如约而至》</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2021年1月26日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(198)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论3 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区6.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>天下为攻俯受称陈:</strong>恭喜大千世界新歌榜霸榜一周</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2021年11月6日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(123)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 原创榜 -->
+                <div class="bsb item">
+
+                    <!-- 头部 -->
+                    <div  class="bsb_head">
+                        <img src="img/榜单3.jpg">
+                        <div class="bsb_con">
+                            <h2>原创榜</h2>
+                            <p>最近更新:11月25日(每周四更新)</p>
+                            <div class="bsb_con_btn">
+                                <a class="an1"><i class="wz1">播放</i></a>
+                                <a class="an2"><i class="wz2">(39910)</i></a>
+                                <a class="an3"><i class="wz2">(13247)</i></a>
+                                <a class="an4"><i class="wz2">下载</i></a>
+                                <a class="an5"><i class="wz2">(21572)</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 身体 -->
+                    <div class="bsb_main">
+
+                        <div class="bsb_main_top">
+                            <h3>歌曲列表</h3>
+                            <p>100首歌</p>
+                            <span>播放<strong>3541267</strong>次</span>
+                        </div>
+
+                        <div class="bsb_main_middle">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>标题</td>
+                                        <td>时长</td>
+                                        <td>歌手</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td><td>回答</td><td>02:29</td><td>YOUNG</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td><td>Dreams</td><td>03:21</td><td>Jung Kook/FiFA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td><td>乌梅子酱</td><td>04:17</td><td>李荣浩</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td><td>那么骄傲</td><td>03:17</td><td>Bell玲慧</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td><td>来年后少年</td><td>03:29</td><td>AFMC黑子</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td><td>当爱在靠近</td><td>02:29</td><td>烟(许佳豪)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td><td>再见我的女孩</td><td>03:19</td><td>烟(许佳豪)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td><td>彩色翅膀</td><td>02:12</td><td>Sasablue</td>
+                                    </tr> 
+                                    <tr>
+                                        <td>9</td><td>写不来情歌</td><td>02:28</td><td>艾志恒</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td><td>会呼吸的痛</td><td>02:12</td><td>不是花火呀/伙计</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td><td>晴空烟火</td><td>04:14</td><td>林宝馨</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td><td>暴雨</td><td>03:12</td><td>董卿卿</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td><td>月下</td><td>02:39</td><td>苏运莹</td>
+                                    </tr>     
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- 评论区 -->
+                    <div class="pl">
+                        <div class="bsb_main_pl">
+                            <h3>评论</h3>
+                            <p>共3214条评论</p>
+                        </div>
+                        <div class="pl_write">
+                            <img src="img/评论.jpg">
+                            <textarea placeholder="评论"></textarea>
+                            <button><a>评论</a></button>
+                        </div>
+                        <!-- 精彩评论 -->
+                        <div class="pl_content">
+                            <h3>精彩评论</h3>
+                            <!-- 评论1 -->
+                            <div class="pl_content_item">
+                                <img src="img/评论区9.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>戴盡欢:</strong>大家可以去听听《一场梦一阵风》宝藏歌曲！！！！</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2022年8月26日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(475)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论2 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区8.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>Deviaco-小可:</strong>《Hard Road》真的是能带给人惊喜的歌</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2021年11月2日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(213)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论3 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区7.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>
+                                    Dj-zahar:</strong>有没有维吾尔族歌手</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2022年8月21日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(111)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 热歌榜 -->
+                <div class="bsb item">
+
+                    <!-- 头部 -->
+                    <div  class="bsb_head">
+                        <img src="img/榜单4.jpg">
+                        <div class="bsb_con">
+                            <h2>热歌榜</h2>
+                            <p>最近更新:11月25日(更新13首)</p>
+                            <div class="bsb_con_btn">
+                                <a class="an1"><i class="wz1">播放</i></a>
+                                <a class="an2"><i class="wz2">(9130)</i></a>
+                                <a class="an3"><i class="wz2">(32417)</i></a>
+                                <a class="an4"><i class="wz2">下载</i></a>
+                                <a class="an5"><i class="wz2">(2172)</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 身体 -->
+                    <div class="bsb_main">
+
+                        <div class="bsb_main_top">
+                            <h3>歌曲列表</h3>
+                            <p>100首歌</p>
+                            <span>播放<strong>524367</strong>次</span>
+                        </div>
+
+                        <div class="bsb_main_middle">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>标题</td>
+                                        <td>时长</td>
+                                        <td>歌手</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td><td>若把你</td><td>03:09</td><td>Kirsty刘璟睿</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td><td>在你的身边</td><td>04:22</td><td>李盛哲</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td><td>把回忆拼好给你</td><td>06:21</td><td>王贰浪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td><td>唯一</td><td>04:30</td><td>告五人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td><td>红</td><td>02:41</td><td>罗言</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td><td>紫荆花盛开</td><td>03:30</td><td>李荣浩/梁咏琪</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td><td>哪里都是你</td><td>03:42</td><td>队长</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td><td>罗生门</td><td>04:03</td><td>梨冻紧</td>
+                                    </tr>  
+                                    <tr>
+                                        <td>9</td><td>爱人错过</td><td>04:52</td><td>告五人</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td><td>苦茶子</td><td>02:50</td><td>Starling8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td><td>群青</td><td>04:08</td><td>YOASOBI</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td><td>水星记</td><td>05:25</td><td>郭顶</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td><td>再见莫妮卡</td><td>03:00</td><td>彭席彦/Franky弗兰奇</td>
+                                    </tr>    
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- 评论区 -->
+                    <div class="pl">
+                        <div class="bsb_main_pl">
+                            <h3>评论</h3>
+                            <p>共3214条评论</p>
+                        </div>
+                        <div class="pl_write">
+                            <img src="img/评论.jpg">
+                            <textarea placeholder="评论"></textarea>
+                            <button><a>评论</a></button>
+                        </div>
+                        <!-- 精彩评论 -->
+                        <div class="pl_content">
+                            <h3>精彩评论</h3>
+                            <!-- 评论1 -->
+                            <div class="pl_content_item">
+                                <img src="img/评论区10.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>Mr_齐先森:</strong>恭喜安河桥首进榜首，恭喜宋胖子，也感谢薛之谦的演绎</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2014年10月26日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(1232)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论2 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区11.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>Lameior:</strong>我只能说流水的第一，铁打的发姐和老薛。</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2022年11月27日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(521)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 评论3 -->
+                            <div class="pl_content_item1">
+                                <img src="img/评论区12.jpg">
+                                <div class="pl_content_wrap">
+                                   <p> <strong>喵呜o嗷呜:</strong>恭喜暧昧蝉联榜首，恭喜阿婆说空降第二！！！</p>
+                                </div>
+                                <div class="pl_content_time">
+                                    <span>2020年7月2日</span>
+                                    <div class="pl_content_alltime">
+                                        <a><img src="img/点赞.png">(31)</a>&nbsp;|  
+                                        <a>回复</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- 结束 -->
+        </div>
+        
+        <!-- 底部区域 -->
+        <div class="footer">
+                <ul>
+                    <li>
+                        <a>服务条款</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>隐私政策</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>儿童隐私政策</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>版权投诉</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>投资者关系</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>广告合作</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>廉正举报</a>&nbsp;|
+                    </li>
+                    <li>
+                        <a>联系我们</a> 
+                    </li>
+                </ul>
+        </div>
+        <div class="footer_bq">
+                <p>&copy; 2022-11-25-数技20105-20肖世顺/18饶灿</p>
+        </div>
+
+        <!-- 播放器 -->
+        <div class="playbar">
+                <div class="p_wrap">
+                    <!-- 播放按钮 -->
+                    <div class="playbtns">
+                        <a class="prv" title="上一首"></a>
+                        <a class="play" title="播放/暂停"></a>
+                        <a class="next" title="下一首"></a>
+                    </div>
+
+                    <!-- 歌曲图片 -->
+                    <div class="songhead">
+                        <img src="img/songhead.jpg">
+                    </div>
+                    
+                    <!-- 进度条播放时间 -->
+                    <div class="play_more">
+                        <div class="playwrap">
+                            <div class="playinfo">
+                                <a class="ellipsis songname" title="紫荆花盛开">紫荆花盛开</a>
+                                <a class="singer_name" title="李荣浩/梁咏琪">李荣浩/梁咏琪</a>
+                            </div>
+                        </div>
+
+                        <!-- 进度条 -->
+                        <div class="progressbar">
+                            <!-- 进度条背景 -->
+                            <div class="barbg"></div>
+
+                            <!-- 当前播放进度条 -->
+                            <div class="cur">
+                                <span class="btn"></span>
+                            </div>
+
+                            <!-- 播放时间 -->
+                            <div class="playtime">
+                                <em>01:33</em>/03:11
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 收藏，分享 -->
+                    <div class="optionwrap">
+                        <a class="add" title="收藏">收藏</a>
+                        <a class="share" title="分享">分享</a>
+                    </div>
+
+                    <!-- 音量控制，循环方式，播放列表 -->
+                    <div class="ctrwrap">
+                        <!-- 音量控制 -->
+                        <a  title="" class="volumeicon"></a>
+                        <!-- 循环方式 -->
+                        <a  title="" class="shuffleicon"></a>
+                        <!-- 播放列表 -->
+                        <a  title="" class="listicon">10</a>
+                    </div>
+
+                    <!-- 右边锁头 -->
+                    <div class="lockingbtn">
+                        <a class="lockbtn"></a>
+                    </div>
+                        
+                </div>
+        </div>
+                
+        
+
+        <!-- 回到顶部top -->
+        <a class="gotopbtn" onclick="topFunction()" id="myBtn"></a>
+
+    </div>
+    <script type="text/javascript" src="js/排行榜.js" ></script>
+    <script type="text/javascript" src="js/回到顶部.js" ></script>
+</body>
+</html>

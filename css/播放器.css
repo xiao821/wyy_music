@@ -1,0 +1,271 @@
+.playbar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1002;
+    width: 100%;
+    height: 53px;
+    background-image: url("../img/playbar.png");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+.playbar .p_wrap{
+    position: absolute;
+    left: 50%;
+    top: 6px;
+    width: 990px;
+    height: 50px;
+    margin-left: -504px;
+}
+/* 播放按钮 */
+.playbtns{
+    width: 137px;
+    float: left;
+    padding: 6px 0 0 0;
+}
+.playbtns a{
+    float: left;
+    width: 28px;
+    height: 28px;
+    margin: 5px 10px 0 0;
+    display: block;
+    text-indent: -9999px;
+    background-position: 0 0;
+}
+.playbtns a.prv{
+    background-image: url("../img/上一首.png");
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+}
+.playbtns a.play{
+    width: 40px;
+    height: 40px;
+    margin-top:-2px;
+    background-image: url("../img/播放.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+}
+.playbtns a.next{
+    background-image: url("../img/下一首.png");
+    background-size: 28px 28px;
+    background-repeat: no-repeat;
+}
+
+/* 播放图片 */
+.songhead{
+    width: 34px;
+    height: 34px;
+    position: relative;
+    margin: 6px 15px 0px 0px;
+    float: left;
+}
+.songhead img{
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+}
+
+.play_more{
+    float: left;
+}
+
+/* <!-- 进度条播放时间 --> */
+.playwrap{
+    width: 581px;
+    /* float: left; */
+}
+.playinfo{
+    overflow: hidden;
+    color: #e8e8e8;
+    text-shadow: 0 1px 0 #171717;
+    line-height: 28px;
+    height: 28px;
+}
+.playinfo a.songname{
+    max-width: 300px;
+    color: #e8e8e8;
+    float: left;
+    font-size: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.playinfo a.songname:hover{
+    text-decoration: underline;
+}
+.singer_name{
+    float: left;
+    font-size: 12px; 
+}
+a.singer_name {
+    max-width: 220px;
+    text-decoration: none;
+    color: #9a9898;
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+.playinfo a.singer_name:hover{
+    text-decoration: underline;
+}
+
+/* 进度条 */
+div.progressbar{
+    width: 466px;
+    position: relative;
+    height: 9px;
+    background-image: url("../img/statbar.png");
+    background-position: right 0;
+    background-repeat: repeat-x;
+}
+/* 当前进度条 */
+div.progressbar .cur{
+    height: 9px;
+    background-image: url("../img/statbar.png");
+    background-repeat: repeat-x;
+    background-position: left -66px;
+    width: 34%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* 进度条点 */
+.progressbar div.cur span.btn{
+    position: absolute;
+    top: -7px;
+    right: -13px;
+    width: 22px;
+    height: 24px;
+    background-image: url("../img/iconall.png");
+    background-repeat: repeat-x;
+    background-position: 0 -280px;
+}
+/* 播放时间 */
+div.playtime{
+    position: absolute;
+    top: -3px;
+    right: -84px;
+    color: #797979;
+    text-shadow: 0 1px 0 #121212;
+    font-size: 10px;
+}
+div.playtime em{
+    color: #a1a1a1;
+}
+/* 分享收藏 */
+div.optionwrap{
+    width: 60px;
+    float: left;
+    font-size: 12px;
+}
+div.optionwrap a.add{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    text-indent: -9999px;
+    background-image: url("../img/playbar.png");
+    background-repeat: repeat-x;
+    background-position: -88px -163px;
+}
+div.optionwrap a.add:hover{
+    background-position: -88px -189px;
+}
+div.optionwrap a.share{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    text-indent: -9999px;
+    background-image: url("../img/playbar.png");
+    background-repeat: repeat-x;
+    background-position: -114px -163px;
+}
+div.optionwrap a.share:hover{
+    background-position: -114px -189px;
+}
+
+/* !-- 音量控制，循环方式，播放列表 --> */
+.ctrwrap{
+    width: 113px;
+    position: relative;
+    height: 25px;
+    z-index: 10;
+    float: left;
+    padding-left: 13px;
+}
+a.volumeicon{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    text-indent: -9999px;
+    background-image: url("../img/playbar.png");
+    background-repeat: repeat-x;
+    background-position: -2px -248px;
+}
+a.volumeicon:hover{
+    background-position: -31px -248px;
+}
+a.shuffleicon{
+    float: left;
+    width: 25px;
+    height: 25px;
+    margin: 11px 2px 0 0;
+    text-indent: -9999px;
+    background-image: url("../img/playbar.png");
+    background-repeat: repeat-x;
+    background-position: -66px -248px;
+}
+a.shuffleicon:hover{
+    background-position: -93px -248px;
+}
+a.listicon{
+    float: left;
+    width: 38px;
+    height: 25px;
+    font-size: 12px;
+    padding-left: 21px;
+    line-height: 27px;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    margin: 11px 2px 0 0;
+    text-indent: 0;
+    text-shadow: 0 1px 0 #080707;
+    margin: 11px 0 0 0;
+    background-image: url("../img/playbar.png");
+    background-repeat: repeat-x;
+    background-position: -42px -68px;
+}
+a.listicon:hover{
+    background-position: -42px -98px;
+}
+
+/* 右边锁头 */
+.lockingbtn{
+    width: 52px;
+    height: 67px;
+    position: fixed;
+    right: 23px;
+    bottom: 0;
+    background-image: url("../img/playbar.png");
+    background-repeat: no-repeat;
+    background-position: 0 -380px;
+}
+.lockingbtn a.lockbtn{
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 6px 0 0 17px;
+    background-image: url("../img/playbar.png");
+    background-repeat: no-repeat;
+    background-position: -100px -380px;
+}
+.lockingbtn a.lockbtn:hover{
+    background-position: -100px -400px;
+}
